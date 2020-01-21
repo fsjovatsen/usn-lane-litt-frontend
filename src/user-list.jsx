@@ -11,7 +11,7 @@ const UserList = () => {
 
     function getUsers() {
         setLoading(true);
-        fetch("http://127.0.0.1:8000/api/users", {
+        fetch("/api/users", {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
