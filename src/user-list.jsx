@@ -35,6 +35,7 @@ const UserList = () => {
             <h1>User list</h1>
             <Box m={2}>
                 <Button onClick={() => getUsers()} color="primary" variant="contained">Get users</Button>
+                <Button onClick={() => setUsers([])} color="primary" variant="contained">Clear</Button>
             </Box>
 
             <Box m={4} display="flex" alignItems="center" flexDirection="column">
