@@ -3,6 +3,7 @@ import Button from "@material-ui/core/Button";
 import UserTable from "./user-table";
 import {CircularProgress} from "@material-ui/core";
 import Box from "@material-ui/core/Box";
+import LinearProgress from "@material-ui/core/LinearProgress";
 
 const UserList = () => {
 
@@ -39,7 +40,7 @@ const UserList = () => {
             </Box>
 
             <Box m={4} display="flex" alignItems="center" flexDirection="column">
-                    {loading ? <CircularProgress size={70}/> : <UserTable users={users}/>}
+                    {loading ? <LinearProgress color={"secondary"}/> : <UserTable users={users}/>}
             </Box>
 
         </div>
